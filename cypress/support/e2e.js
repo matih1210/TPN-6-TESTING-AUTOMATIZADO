@@ -15,3 +15,9 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+
+// Hook to take a screenshot after each test
+afterEach(() => {
+  const testName = Cypress.mocha.getRunner().suite.ctx.currentTest.title;
+  cy.screenshot(testName);
+});
