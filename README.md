@@ -27,26 +27,26 @@ El objetivo es validar los flujos principales de la aplicación: registro de usu
 
 ## 📂 Estructura del proyecto
 
+```bash
 cypress/
 │
-├── e2e/ # Casos de prueba
-│ ├── crearContacto.cy.js
-│ ├── editarContacto.cy.js
-│ ├── eliminarContacto.cy.js
-│ ├── registro.cy.js
-│ ├── login.cy.js
-│ ├── logout.cy.js
-│ ├── restriccionSinSesion.cy.js
-│ └── validacionesCrearContacto.cy.js
+├── e2e/                  # Casos de prueba
+│   ├── crearContacto.cy.js
+│   ├── editarContacto.cy.js
+│   ├── eliminarContacto.cy.js
+│   ├── registro.cy.js
+│   ├── login.cy.js
+│   ├── logout.cy.js
+│   ├── restriccionSinSesion.cy.js
+│   └── validacionesCrearContacto.cy.js
 │
-├── fixtures/ # Datos de prueba (JSON)
+├── fixtures/             # Datos de prueba (JSON)
 │
-├── support/ # Comandos custom de Cypress
-│ └── commands.js # ej: cy.login()
+├── support/              # Comandos custom de Cypress
+│   └── commands.js       # ej: cy.login()
 │
-└── cypress.config.js # Configuración baseUrl y viewport
-
-
+└── cypress.config.js     # Configuración baseUrl y viewport
+```
 ---
 
 ## ⚙️ Requisitos
@@ -95,7 +95,7 @@ cy.login(email, password)
 ```
 ---
 
-👩‍💻 Autor:
+👩‍💻 Autores:
 - Matias Hansen
 - Matias Zarandon
 - Daniel Cabrero
