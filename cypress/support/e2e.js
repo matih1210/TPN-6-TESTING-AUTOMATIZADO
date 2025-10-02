@@ -19,5 +19,6 @@ import './commands'
 // Hook to take a screenshot after each test
 afterEach(() => {
   const testName = Cypress.mocha.getRunner().suite.ctx.currentTest.title;
+  cy.wait(2000);
   cy.screenshot(testName);
 });
